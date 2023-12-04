@@ -2,7 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
         var newAuto = new Cerato("Koup", 2011, 5, 18600, "Red", "Automatic");
-        Cerato.setFuel("A-95 (recomended)");
+        Cerato.setFuel("A-95 (recommended)");
 
 
         System.out.println("Sail Car List:");
