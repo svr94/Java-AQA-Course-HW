@@ -1,13 +1,11 @@
-public class Cerato extends Kia {
-    static String model = "Cerato";
+public class Focus extends Ford implements Use_In_Taxi{
+    static String model = "Focus";
     public static String fuel;
     public String transmission;
-
-    public Cerato(String type, Integer year, Integer numSits, Integer distance, String color, String transmission) {
-        super(type, year, numSits, distance, color);
+    public Focus(String type, Integer year, Integer numSits, Integer distance, String color, String transmission)
+    {super(type, year, numSits, distance, color);
         this.transmission = transmission;
     }
-
     public String getFuel() {
         return fuel;
     }
@@ -24,5 +22,8 @@ public class Cerato extends Kia {
         return transmission;
     }
 
+    @Override
+    public void serve_auto(String command) {
+        System.out.println("Served:" +command);
+    }
 }
-
