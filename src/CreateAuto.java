@@ -1,12 +1,11 @@
-public class CreateAuto extends Auto{
-    private String type;
+abstract class CreateAuto {
+    public String type;
     public Integer year;
     public Integer numSits;
     public Integer distance;
     public String color;
 
-    public CreateAuto(String type, Integer year, Integer numSits, Integer distance, String color) {
-        super(type, year, numSits, distance, color);
+    public CreateAuto() {
     }
 
     public CreateAuto setType(String type) {
