@@ -1,67 +1,106 @@
-public class Sonata extends Hyundai implements Use_In_Taxi{
+public class Sonata extends Hyundai implements Use_In_Taxi {
     static String model = "Sonata";
-    public static String fuel;
+    public static FuelType fuel = FuelType.gas;
     public String transmission;
-    private String type;
-    private Integer year;
-    private Integer numSits;
-    private Integer distance;
+    public int numDoors = 4;
 
-    public Sonata(String transmission)
-    {super();
+    public Sonata(String type, int year, int numSits, int distance, Color color, String transmission, int numDoors) {
+        super(type, year, numSits, distance, color);
         this.transmission = transmission;
+        this.numDoors = numDoors;
     }
 
     public static String getModel() {
         return model;
     }
-    public static String setFuel(String fuel) {
-        return Sonata.fuel = fuel;
+
+    public static void setModel(String model) {
+        Sonata.model = model;
     }
-    public String getFuel() {
+
+    public static FuelType getFuel() {
         return fuel;
+    }
+
+    public static void setFuel(FuelType fuel) {
+        Sonata.fuel = fuel;
     }
 
     public String getTransmission() {
         return transmission;
     }
 
-    public Sonata setType(String type) {
-        this.type = type;
-        return this;
+    public void setTransmission(String transmission) {
+        this.transmission = transmission;
     }
-    public String getType(){return type;}
 
-    public Sonata setYear(Integer year) {
-        this.year = year;
-        return this;
+    public int getNumDoors() {
+        return numDoors;
     }
-    public Integer getYear(){return year;}
 
-    public Sonata setNumSits(Integer numSits) {
-        this.numSits = numSits;
-        return this;
-    }
-    public Integer getNumSits(){return numSits;}
-
-    public Sonata setDistance(Integer distance) {
-        this.distance = distance;
-        return this;
-    }
-    public Integer getDistance(){return distance;}
-
-    public Sonata createSonata() {
-        return new Sonata(transmission);
+    public void setNumDoors(int numDoors) {
+        this.numDoors = numDoors;
     }
 
     @Override
     public void serve_auto(String command) {
-        System.out.println("Use in Taxi:" +command);
+        System.out.println("Use in Taxi:" + command);
     }
 
     @Override
     public void last_serve(String command) {
         Use_In_Taxi.super.last_serve(command);
     }
-}
+
+
+    public static class Builder {
+        private String type;
+        private int year;
+        private int numSits;
+        private int distance;
+        private Color color;
+        private String transmission;
+        private int numDoors;
+
+        public Builder setType(String type) {
+            this.type = type;
+            return this;
+        }
+
+        public Builder setYear(int year) {
+            this.year = year;
+            return this;
+        }
+
+        public Builder setNumSits(int numSits) {
+            this.numSits = numSits;
+            return this;
+        }
+
+        public Builder setDistance(int distance) {
+            this.distance = distance;
+            return this;
+        }
+
+        public Builder setColor(Color color) {
+            this.color = color;
+            return this;
+        }
+
+        public Builder setTransmission(String transmission) {
+            this.transmission = transmission;
+            return this;
+        }
+
+        public Builder setNumDoors(int numDoors) {
+            this.numDoors = numDoors;
+            return this;
+        }
+
+        public Sonata createSonata() {
+            return new Sonata(type, year, numSits, distance, color, transmission, numDoors);
+        }
+    }
+    }
+
 

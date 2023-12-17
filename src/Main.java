@@ -1,60 +1,73 @@
 public class Main {
 
     public static void main(String[] args) {
-
         System.out.println("----- Auto 1");
-        var sonata = new Sonata("Automatic");
-        System.out.println("Mark:" + Hyundai.getMark());
-        System.out.println("Country Mark:" + Hyundai.getCountryBrand());
-        System.out.println("Model:" + Sonata.getModel());
+        System.out.println("Mark:"+ Hyundai.getMark());
+        System.out.println("Country Brand:"+ Hyundai.getCountryBrand());
+        var sonata = new Sonata.Builder()
+                .createSonata();
         sonata.setType("Sedan");
-        System.out.println("Type:" + sonata.getType());
-        sonata.setYear(2014);
-        System.out.println("Year:" + sonata.getYear());
+        System.out.println("Type:" +sonata.getType());
+        sonata.setYear(2013);
+        System.out.println("Year:" +sonata.getYear());
         sonata.setNumSits(5);
-        System.out.println("Count of sits:" + sonata.getNumSits());
-        sonata.setDistance(155000);
-        System.out.println("Distance:" + sonata.getDistance());
-        System.out.println("Transmission:" + sonata.getTransmission());
-        System.out.println("Color:" + Color.Black);
+        System.out.println("Count of sits:" +sonata.getNumSits());
+        sonata.setDistance(156000);
+        System.out.println("Distance:" +sonata.getDistance());
+        sonata.setColor(Color.Black);
+        System.out.println("Color:" +sonata.getColor());
+        sonata.setTransmission("Automatic");
+        System.out.println("Transmission:" +sonata.getTransmission());
+        sonata.setNumDoors(4);
+        System.out.println("Count of doors:" +sonata.getNumDoors());
         sonata.serve_auto("Yes");
         sonata.last_serve("01.12.2023");
+        sonata.trafficAccidents();
 
         System.out.println("----- Auto 2");
-        var cerato = new Cerato("Automatic");
-        System.out.println("Mark:" + Kia.getMark());
-        System.out.println("Country Mark:" + Kia.getCountryBrand());
-        System.out.println("Model:" + Cerato.getModel());
+        System.out.println("Mark:"+ Kia.getMark());
+        System.out.println("Country Brand:"+ Kia.getCountryBrand());
+        var cerato = new Cerato.Builder()
+                .createCerato();
         cerato.setType("Koup");
-        System.out.println("Type:" + cerato.getType());
+        System.out.println("Type:" +cerato.getType());
         cerato.setYear(2011);
-        System.out.println("Year:" + cerato.getYear());
+        System.out.println("Year:" +cerato.getYear());
         cerato.setNumSits(5);
-        System.out.println("Count of sits:" + cerato.getNumSits());
+        System.out.println("Count of sits:" +cerato.getNumSits());
         cerato.setDistance(185000);
-        System.out.println("Distance:" + cerato.getDistance());
-        System.out.println("Transmission:" + cerato.getTransmission());
-        System.out.println("Color:" + Color.Red);
+        System.out.println("Distance:" +cerato.getDistance());
+        cerato.setColor(Color.Red);
+        System.out.println("Color:" +cerato.getColor());
+        cerato.setTransmission("Automatic");
+        System.out.println("Transmission:" +cerato.getTransmission());
+        cerato.setNumDoors(2);
+        System.out.println("Count of doors:" +cerato.getNumDoors());
         cerato.serve_auto("No");
         cerato.last_serve("26.08.2023");
 
         System.out.println("----- Auto 3");
-        var focus = new Focus("Automatic");
-        System.out.println("Mark:" + Ford.getMark());
-        System.out.println("Country Mark:" + Ford.getCountryBrand());
-        System.out.println("Model:" + Focus.getModel());
-        focus.setType("Hatchback");
-        System.out.println("Type:" + focus.getType());
-        focus.setYear(2016);
-        System.out.println("Year:" + focus.getYear());
+        System.out.println("Mark:"+ Ford.getMark());
+        System.out.println("Country Brand:"+ Ford.getCountryBrand());
+        var focus = new Focus.Builder()
+                .createFocus();
+        focus.setType("");
+        System.out.println("Type:" +focus.getType());
+        focus.setYear(2011);
+        System.out.println("Year:" +focus.getYear());
         focus.setNumSits(5);
-        System.out.println("Count of sits:" + focus.getNumSits());
-        focus.setDistance(183000);
-        System.out.println("Distance:" + focus.getDistance());
-        System.out.println("Transmission:" + focus.getTransmission());
-        System.out.println("Color:" + Color.Blue);
+        System.out.println("Count of sits:" +focus.getNumSits());
+        focus.setDistance(185000);
+        System.out.println("Distance:" +focus.getDistance());
+        focus.setColor(Color.Red);
+        System.out.println("Color:" +focus.getColor());
+        focus.setTransmission("Automatic");
+        System.out.println("Transmission:" +focus.getTransmission());
+        focus.setNumDoors(4);
+        System.out.println("Count of doors:" +focus.getNumDoors());
         focus.serve_auto("Yes");
-        focus.last_serve("15.10.2023");
+        focus.last_serve("16.10.2023");
+
     }
 
 }

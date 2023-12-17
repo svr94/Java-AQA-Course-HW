@@ -5,19 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1be03c44-bf98-4a8e-b145-9c7bff4195bb" name="Changes" comment="hw5 v2">
-      <change afterPath="$PROJECT_DIR$/src/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FuelType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Auto.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cerato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cerato.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateAuto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CreateAuto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Auto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Focus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Focus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ford.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ford.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Hyundai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hyundai.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sonata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sonata.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Use_In_Taxi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Use_In_Taxi.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +49,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/user_1/Desktop/Новая папка/Home work 5 Abstraction. Build"
+    "last_opened_file_path": "/Users/user_1/Desktop/Новая папка/Java-AQA-Course-HW/Home work 5 Abstraction. Build"
   }
 }]]></component>
   <component name="RecentsManager">

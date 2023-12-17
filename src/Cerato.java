@@ -1,70 +1,44 @@
 public class Cerato extends Kia implements Use_In_Taxi {
     static String model = "Cerato";
-    public static String fuel;
+    public static FuelType fuel = FuelType.petrol;
     public String transmission;
-    private String type;
-    private Integer year;
-    private Integer numSits;
-    private Integer distance;
-    private String color;
-
-    public Cerato(String transmission)
-    {super();
+    public int numDoors = 2;
+    public Cerato(String type, int year, int numSits, int distance, Color color, String transmission, int numDoors) {
+        super(type, year, numSits, distance, color);
         this.transmission = transmission;
+        this.numDoors = numDoors;
     }
+
     public static String getModel() {
         return model;
     }
-    public static String setFuel(String fuel) {
-        return Cerato.fuel = fuel;
+
+    public static void setModel(String model) {
+        Cerato.model = model;
     }
-    public String getFuel() {
+
+    public static FuelType getFuel() {
         return fuel;
+    }
+
+    public static void setFuel(FuelType fuel) {
+        Cerato.fuel = fuel;
     }
 
     public String getTransmission() {
         return transmission;
     }
 
-    public Cerato setType(String type) {
-        this.type = type;
-        return this;
-    }
-    public String getType() {
-        return type;
-    }
-
-    public Cerato setYear(Integer year) {
-        this.year = year;
-        return this;
-    }
-    public Integer getYear() {
-        return year;
-    }
-
-    public Cerato setNumSits(Integer numSits) {
-        this.numSits = numSits;
-        return this;
-    }
-    public Integer getNumSits() {
-        return numSits;
-    }
-
-    public Cerato setDistance(Integer distance) {
-        this.distance = distance;
-        return this;
-    }
-    public Integer getDistance() {
-        return distance;
-    }
-
-    public Cerato setTransmission(String transmission) {
+    public void setTransmission(String transmission) {
         this.transmission = transmission;
-        return this;
     }
 
-    public Cerato createCerato() {
-        return new Cerato(transmission);
+    public int getNumDoors() {
+        return numDoors;
+    }
+
+    public void setNumDoors(int numDoors) {
+        this.numDoors = numDoors;
     }
 
     @Override
@@ -75,6 +49,55 @@ public class Cerato extends Kia implements Use_In_Taxi {
     @Override
     public void last_serve(String command) {
         Use_In_Taxi.super.last_serve(command);
+    }
+
+    public static class Builder {
+        private String type;
+        private int year;
+        private int numSits;
+        private int distance;
+        private Color color;
+        private String transmission;
+        private int numDoors;
+
+        public Cerato.Builder setType(String type) {
+            this.type = type;
+            return this;
+        }
+
+        public Cerato.Builder setYear(int year) {
+            this.year = year;
+            return this;
+        }
+
+        public Cerato.Builder setNumSits(int numSits) {
+            this.numSits = numSits;
+            return this;
+        }
+
+        public Cerato.Builder setDistance(int distance) {
+            this.distance = distance;
+            return this;
+        }
+
+        public Cerato.Builder setColor(Color color) {
+            this.color = color;
+            return this;
+        }
+
+        public Cerato.Builder setTransmission(String transmission) {
+            this.transmission = transmission;
+            return this;
+        }
+
+        public Cerato.Builder setNumDoors(int numDoors) {
+            this.numDoors = numDoors;
+            return this;
+        }
+
+        public Cerato createCerato() {
+            return new Cerato(type, year, numSits, distance, color, transmission, numDoors);
+        }
     }
 }
 
