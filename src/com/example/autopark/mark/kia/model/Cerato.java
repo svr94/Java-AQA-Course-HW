@@ -1,3 +1,10 @@
+package com.example.autopark.mark.kia.model;
+
+import com.example.autopark.Color;
+import com.example.autopark.FuelType;
+import com.example.autopark.mark.kia.Kia;
+import com.example.autopark.Use_In_Taxi;
+
 public class Cerato extends Kia implements Use_In_Taxi {
     static String model = "Cerato";
     public static FuelType fuel = FuelType.petrol;
@@ -49,6 +56,19 @@ public class Cerato extends Kia implements Use_In_Taxi {
     @Override
     public void last_serve(String command) {
         Use_In_Taxi.super.last_serve(command);
+    }
+
+    @Override
+    public String toString() {
+        return  " Cerato{" +
+                "mark='" + mark + '\'' +
+                ", model='" + model + '\'' +
+                ", countryBrand='" + countryBrand + '\'' +
+                super.toString() +
+                ", fuel='" + fuel + '\'' +
+                ", transmission=" + transmission + '\'' +
+                ", numDoors=" + numDoors +
+                "} ";
     }
 
     public static class Builder {

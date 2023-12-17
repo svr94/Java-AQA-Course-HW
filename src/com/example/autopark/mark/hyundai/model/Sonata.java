@@ -1,3 +1,10 @@
+package com.example.autopark.mark.hyundai.model;
+
+import com.example.autopark.Color;
+import com.example.autopark.FuelType;
+import com.example.autopark.mark.hyundai.Hyundai;
+import com.example.autopark.Use_In_Taxi;
+
 public class Sonata extends Hyundai implements Use_In_Taxi {
     static String model = "Sonata";
     public static FuelType fuel = FuelType.gas;
@@ -50,6 +57,23 @@ public class Sonata extends Hyundai implements Use_In_Taxi {
     @Override
     public void last_serve(String command) {
         Use_In_Taxi.super.last_serve(command);
+    }
+
+    @Override
+    public String toString() {
+        return "Sonata{" +
+                "mark='" + getMark() + '\'' +
+                ", model='" + getModel() + '\'' +
+                ", countryBrand='" + getCountryBrand() + '\'' +
+                ", year=" + getYear() +
+                ", type='" + getType() + '\'' +
+                ", distance=" + getDistance() +
+                ", color='" + getColor() + '\'' +
+                ", numSits=" + getNumSits() +
+                ", fuel='" + getFuel() + '\'' +
+                ", transmission='" + getTransmission() + '\'' +
+                ", numDoors=" + getNumDoors() +
+                "} ";
     }
 
 

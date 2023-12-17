@@ -1,10 +1,15 @@
-public class Kia extends Auto{
-    public static String mark = "Kia";
+package com.example.autopark.mark.hyundai;
+
+import com.example.autopark.*;
+
+public class Hyundai extends Auto {
+    public static String mark = "Hyundai";
     public static String countryBrand = "South Korea";
 
-    public Kia(String type, int year, int numSits, int distance, Color color) {
+    public Hyundai(String type, int year, int numSits, int distance, Color color) {
         super(type, year, numSits, distance, color);
     }
+
 
     @Override
     public void trafficAccidents() {
@@ -13,6 +18,4 @@ public class Kia extends Auto{
 
     public static String getMark(){return mark;}
     public static String getCountryBrand() {return countryBrand;}
-
 }
-

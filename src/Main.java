@@ -1,72 +1,79 @@
+import com.example.autopark.Color;
+import com.example.autopark.mark.ford.model.Focus;
+import com.example.autopark.mark.hyundai.model.Sonata;
+import com.example.autopark.mark.kia.model.Cerato;
+import com.example.autopark.mark.ford.model.Explorer;
+
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("----- Auto 1");
-        System.out.println("Mark:"+ Hyundai.getMark());
-        System.out.println("Country Brand:"+ Hyundai.getCountryBrand());
+
         var sonata = new Sonata.Builder()
                 .createSonata();
-        sonata.setType("Sedan");
-        System.out.println("Type:" +sonata.getType());
         sonata.setYear(2013);
-        System.out.println("Year:" +sonata.getYear());
-        sonata.setNumSits(5);
-        System.out.println("Count of sits:" +sonata.getNumSits());
-        sonata.setDistance(156000);
-        System.out.println("Distance:" +sonata.getDistance());
-        sonata.setColor(Color.Black);
-        System.out.println("Color:" +sonata.getColor());
         sonata.setTransmission("Automatic");
-        System.out.println("Transmission:" +sonata.getTransmission());
+        sonata.setType("Sedan");
+        sonata.setDistance(154000);
+        sonata.setColor(Color.Black);
+        sonata.setNumSits(5);
         sonata.setNumDoors(4);
-        System.out.println("Count of doors:" +sonata.getNumDoors());
+
+        System.out.println();
+        System.out.println("---Auto1");
+        System.out.println(sonata);
         sonata.serve_auto("Yes");
         sonata.last_serve("01.12.2023");
         sonata.trafficAccidents();
 
-        System.out.println("----- Auto 2");
-        System.out.println("Mark:"+ Kia.getMark());
-        System.out.println("Country Brand:"+ Kia.getCountryBrand());
         var cerato = new Cerato.Builder()
                 .createCerato();
-        cerato.setType("Koup");
-        System.out.println("Type:" +cerato.getType());
         cerato.setYear(2011);
-        System.out.println("Year:" +cerato.getYear());
-        cerato.setNumSits(5);
-        System.out.println("Count of sits:" +cerato.getNumSits());
-        cerato.setDistance(185000);
-        System.out.println("Distance:" +cerato.getDistance());
-        cerato.setColor(Color.Red);
-        System.out.println("Color:" +cerato.getColor());
         cerato.setTransmission("Automatic");
-        System.out.println("Transmission:" +cerato.getTransmission());
+        cerato.setType("Koup");
+        cerato.setDistance(186000);
+        cerato.setColor(Color.Red);
+        cerato.setNumSits(5);
         cerato.setNumDoors(2);
-        System.out.println("Count of doors:" +cerato.getNumDoors());
+
+        System.out.println();
+        System.out.println("---Auto2");
+        System.out.println(cerato);
         cerato.serve_auto("No");
         cerato.last_serve("26.08.2023");
 
-        System.out.println("----- Auto 3");
-        System.out.println("Mark:"+ Ford.getMark());
-        System.out.println("Country Brand:"+ Ford.getCountryBrand());
         var focus = new Focus.Builder()
                 .createFocus();
-        focus.setType("");
-        System.out.println("Type:" +focus.getType());
-        focus.setYear(2011);
-        System.out.println("Year:" +focus.getYear());
-        focus.setNumSits(5);
-        System.out.println("Count of sits:" +focus.getNumSits());
-        focus.setDistance(185000);
-        System.out.println("Distance:" +focus.getDistance());
-        focus.setColor(Color.Red);
-        System.out.println("Color:" +focus.getColor());
+        focus.setYear(2016);
         focus.setTransmission("Automatic");
-        System.out.println("Transmission:" +focus.getTransmission());
+        focus.setType("Hatchback");
+        focus.setDistance(182000);
+        focus.setColor(Color.Black);
+        focus.setNumSits(5);
         focus.setNumDoors(4);
-        System.out.println("Count of doors:" +focus.getNumDoors());
+
+        System.out.println();
+        System.out.println("---Auto3");
+        System.out.println(focus);
         focus.serve_auto("Yes");
         focus.last_serve("16.10.2023");
+
+        var explorer = new Explorer.Builder()
+                .createExplorer();
+        explorer.setYear(2017);
+        explorer.setTransmission("Automatic");
+        explorer.setType("Crossover");
+        explorer.setDistance(82000);
+        explorer.setColor(Color.Blue);
+        explorer.setNumSits(7);
+        explorer.setNumDoors(4);
+
+        System.out.println();
+        System.out.println("---Auto4");
+        System.out.println(explorer);
+        explorer.serve_auto("No");
+        explorer.last_serve("12.03.2022");
+
+
 
     }
 

@@ -1,4 +1,9 @@
-public class Ford extends Auto{
+package com.example.autopark.mark.ford;
+
+import com.example.autopark.Auto;
+import com.example.autopark.Color;
+
+public class Ford extends Auto {
     public static String mark = "Ford";
     public static String countryBrand = "USA";
 

@@ -1,4 +1,6 @@
-abstract class Auto {
+package com.example.autopark;
+
+public abstract class Auto {
     protected String type;
     protected int year;
     protected int numSits;
@@ -54,4 +56,15 @@ abstract class Auto {
     }
 
     public abstract void trafficAccidents();
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer();
+        sb.append(", type='").append(type).append('\'');
+        sb.append(", year=").append(year);
+        sb.append(", distance=").append(distance);
+        sb.append(", color='").append(color).append('\'');
+        sb.append(", numSits=").append(numSits);
+        return sb.toString();
+    }
 }

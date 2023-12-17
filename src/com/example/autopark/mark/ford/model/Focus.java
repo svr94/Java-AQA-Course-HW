@@ -1,10 +1,15 @@
-public class Focus extends Ford implements Use_In_Taxi{
+package com.example.autopark.mark.ford.model;
+
+import com.example.autopark.mark.ford.Ford;
+import com.example.autopark.FuelType;
+import com.example.autopark.Use_In_Taxi;
+import com.example.autopark.Color;
+
+public class Focus extends Ford implements Use_In_Taxi {
     static String model = "Focus";
     public static FuelType fuel = FuelType.petrol;
     public String transmission;
     public int numDoors = 4;
-
-
 
     public Focus(String type, int year, int numSits, int distance, Color color, String transmission, int numDoors)
     {super(type, year, numSits, distance, color);
@@ -50,6 +55,23 @@ public class Focus extends Ford implements Use_In_Taxi{
     @Override
     public void last_serve(String command) {
         Use_In_Taxi.super.last_serve(command);
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Focus{");
+        sb.append("mark='").append(mark).append('\'');
+        sb.append(", model='").append(model).append('\'');
+        sb.append(", type='").append(type).append('\'');
+        sb.append(", year=").append(year);
+        sb.append(", distance=").append(distance);
+        sb.append(", color='").append(color).append('\'');
+        sb.append(", numSits=").append(numSits);
+        sb.append(", fuel='").append(fuel).append('\'');
+        sb.append(", transmission='").append(transmission).append('\'');
+        sb.append(", numDoors=").append(numDoors);
+        sb.append('}');
+        return sb.toString();
     }
 
 
