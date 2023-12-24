@@ -1,24 +1,26 @@
 package com.example.autopark.mark.kia;
-
 import com.example.autopark.Auto;
-import com.example.autopark.Color;
+import com.example.autopark.mark.Mark;
 
+import java.util.StringJoiner;
 
 public class Kia extends Auto {
-    public static String mark = "Kia";
-    public static String countryBrand = "South Korea";
 
-    public Kia(String type, int year, int numSits, int distance, Color color) {
-        super(type, year, numSits, distance, color);
+    protected Mark mark = null;
+
+    public Kia(String type, int year, int numSits, int distance) {
+        super(type, year, numSits, distance);
+    }
+
+    @Override
+    public String toString() {
+        return "Kia" + super.toString();
     }
 
     @Override
     public void trafficAccidents() {
-        System.out.println("!!! Traffic accidents");
-    }
 
-    public static String getMark(){return mark;}
-    public static String getCountryBrand() {return countryBrand;}
+    }
 
 }
 
