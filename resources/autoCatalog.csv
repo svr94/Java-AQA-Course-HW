@@ -1,0 +1,5 @@
+﻿mark;model;countryBrand;type;year;numSits;distance;color;fuel;transmission;numDoors
+Ford;Focus;USA;Hetchback;2016;5;183000;Black;Petrol;Automatic;4
+Ford;Explorer;USA;Crossover;2017;7;57000;Blue;Petrol;Automatic;4
+Kia;Cerato;South Korea;Koup;2011;5;186000;Red;Petrol;Automatic;2
+Hyundai;Sonata;South Korea;Sedan;2013;5;153000;Black;Gas;Automatic;4
