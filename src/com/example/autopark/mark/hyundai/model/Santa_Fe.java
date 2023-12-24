@@ -1,11 +1,11 @@
 package com.example.autopark.mark.hyundai.model;
+import com.example.autopark.Use_In_Taxi;
 import com.example.autopark.mark.Mark;
 import com.example.autopark.mark.hyundai.Hyundai;
-import com.example.autopark.Use_In_Taxi;
 
-public class Sonata extends Hyundai implements Use_In_Taxi {
+public class Santa_Fe extends Hyundai implements Use_In_Taxi {
 
-    protected String model = "Sonata";
+    protected String model = "Santa Fe";
     public String transmission;
 
     public String getTransmission() {
@@ -16,7 +16,7 @@ public class Sonata extends Hyundai implements Use_In_Taxi {
         this.transmission = transmission;
     }
 
-    public Sonata(String type, int year, int numSits, int distance, String transmission) {
+    public Santa_Fe(String type, int year, int numSits, int distance, String transmission) {
         super(type, year, numSits, distance);
         this.transmission = transmission;
         mark = Mark.Hyundai;
@@ -24,7 +24,7 @@ public class Sonata extends Hyundai implements Use_In_Taxi {
 
     @Override
     public String toString() {
-        return "Sonata{" +
+        return "{" +
                 "mark=" + mark +
                 ", model=" + model
                 +", transmission=" + transmission

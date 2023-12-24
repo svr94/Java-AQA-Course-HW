@@ -24,7 +24,7 @@ public class Focus extends Ford implements Use_In_Taxi {
 
     @Override
     public String toString() {
-        return "Focus{" +
+        return "{" +
                 "mark=" + mark +
                 ", model=" + model
                 +", transmission=" + transmission

@@ -26,7 +26,7 @@ public class Cerato extends Kia implements Use_In_Taxi {
 
     @Override
     public String toString() {
-        return "Cerato{" +
+        return "{" +
                 "mark=" + mark +
                 ", model=" + model
                 +", transmission=" + transmission

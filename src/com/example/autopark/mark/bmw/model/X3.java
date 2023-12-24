@@ -1,13 +1,17 @@
-package com.example.autopark.mark.ford.model;
-import com.example.autopark.mark.Mark;
-import com.example.autopark.mark.ford.Ford;
+package com.example.autopark.mark.bmw.model;
 import com.example.autopark.Use_In_Taxi;
+import com.example.autopark.mark.Mark;
+import com.example.autopark.mark.bmw.BMW;
 
-public class Explorer extends Ford implements Use_In_Taxi {
-
-    protected String model = "Explorer";
+public class X3 extends BMW implements Use_In_Taxi {
+    protected String model = "X3";
     public String transmission;
 
+    public X3(String type, int year, int numSits, int distance, String transmission)
+    {super(type, year, numSits, distance);
+        this.transmission = transmission;
+        mark = Mark.BMW;
+    }
 
     public String getTransmission() {
         return transmission;
@@ -15,12 +19,6 @@ public class Explorer extends Ford implements Use_In_Taxi {
 
     public void setTransmission(String transmission) {
         this.transmission = transmission;
-    }
-
-    public Explorer(String type, int year, int numSits, int distance, String transmission)
-    {super(type, year, numSits, distance);
-        this.transmission = transmission;
-        mark = Mark.Ford;
     }
 
     @Override
@@ -42,6 +40,5 @@ public class Explorer extends Ford implements Use_In_Taxi {
     }
 
 
+
 }
-
-

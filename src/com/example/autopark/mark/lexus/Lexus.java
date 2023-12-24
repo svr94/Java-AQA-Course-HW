@@ -1,25 +1,21 @@
-package com.example.autopark.mark.kia;
+package com.example.autopark.mark.lexus;
 import com.example.autopark.Auto;
 import com.example.autopark.mark.Mark;
 
-
-public class Kia extends Auto {
-
+public class Lexus extends Auto {
     protected Mark mark = null;
 
-    public Kia(String type, int year, int numSits, int distance) {
+    public Lexus(String type, int year, int numSits, int distance) {
         super(type, year, numSits, distance);
     }
 
     @Override
     public String toString() {
-        return "Kia" + super.toString();
+        return "Lexus" + super.toString();
     }
 
     @Override
     public void trafficAccidents() {
 
     }
-
 }
-

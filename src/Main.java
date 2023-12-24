@@ -1,17 +1,20 @@
+import com.example.autopark.mark.bmw.model.X3;
+import com.example.autopark.mark.bmw.model.X5;
+import com.example.autopark.mark.hyundai.model.Santa_Fe;
 import com.example.autopark.mark.kia.model.Cerato;
 import com.example.autopark.mark.ford.model.Focus;
-import com.example.autopark.mark.hyundai.model.Sonata;
+import com.example.autopark.mark.hyundai.model.Kona;
 import com.example.autopark.mark.ford.model.Explorer;
 import com.example.autopark.Auto;
+import com.example.autopark.mark.kia.model.Rio;
+import com.example.autopark.mark.lexus.model.GS;
+import com.example.autopark.mark.lexus.model.LS;
 
-import java.io.File;
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.NoSuchElementException;
-import java.util.Scanner;
+
 
 public class Main {
 
@@ -81,16 +84,40 @@ public class Main {
                         auto = new Cerato(pieces[3], Integer.parseInt(pieces[4]), Integer.parseInt(pieces[5]),
                                 Integer.parseInt(pieces[6]), pieces[9]);
                         break;
+                    case "Rio":
+                        auto = new Rio(pieces[3], Integer.parseInt(pieces[4]), Integer.parseInt(pieces[5]),
+                                Integer.parseInt(pieces[6]), pieces[9]);
+                        break;
+                    case "Kona":
+                        auto = new Kona(pieces[3], Integer.parseInt(pieces[4]), Integer.parseInt(pieces[5]),
+                                Integer.parseInt(pieces[6]), pieces[9]);
+                        break;
+                    case "Santa Fe":
+                        auto = new Santa_Fe(pieces[3], Integer.parseInt(pieces[4]), Integer.parseInt(pieces[5]),
+                                Integer.parseInt(pieces[6]), pieces[9]);
+                        break;
                     case "Focus":
                         auto = new Focus(pieces[3], Integer.parseInt(pieces[4]), Integer.parseInt(pieces[5]),
                                 Integer.parseInt(pieces[6]), pieces[9]);
                         break;
-                    case "Sonata":
-                        auto = new Sonata(pieces[3], Integer.parseInt(pieces[4]), Integer.parseInt(pieces[5]),
-                                Integer.parseInt(pieces[6]), pieces[9]);
-                        break;
                     case "Explorer":
                         auto = new Explorer(pieces[3], Integer.parseInt(pieces[4]), Integer.parseInt(pieces[5]),
+                                Integer.parseInt(pieces[6]), pieces[9]);
+                        break;
+                    case "X3":
+                        auto = new X3(pieces[3], Integer.parseInt(pieces[4]), Integer.parseInt(pieces[5]),
+                                Integer.parseInt(pieces[6]), pieces[9]);
+                        break;
+                    case "X5":
+                        auto = new X5(pieces[3], Integer.parseInt(pieces[4]), Integer.parseInt(pieces[5]),
+                                Integer.parseInt(pieces[6]), pieces[9]);
+                        break;
+                    case "GS":
+                        auto = new GS(pieces[3], Integer.parseInt(pieces[4]), Integer.parseInt(pieces[5]),
+                                Integer.parseInt(pieces[6]), pieces[9]);
+                        break;
+                    case "LS":
+                        auto = new LS(pieces[3], Integer.parseInt(pieces[4]), Integer.parseInt(pieces[5]),
                                 Integer.parseInt(pieces[6]), pieces[9]);
                         break;
                 }

@@ -1,13 +1,12 @@
-package com.example.autopark.mark.ford.model;
+package com.example.autopark.mark.hyundai.model;
 import com.example.autopark.mark.Mark;
-import com.example.autopark.mark.ford.Ford;
+import com.example.autopark.mark.hyundai.Hyundai;
 import com.example.autopark.Use_In_Taxi;
 
-public class Explorer extends Ford implements Use_In_Taxi {
+public class Kona extends Hyundai implements Use_In_Taxi {
 
-    protected String model = "Explorer";
+    protected String model = "Kona";
     public String transmission;
-
 
     public String getTransmission() {
         return transmission;
@@ -17,10 +16,10 @@ public class Explorer extends Ford implements Use_In_Taxi {
         this.transmission = transmission;
     }
 
-    public Explorer(String type, int year, int numSits, int distance, String transmission)
-    {super(type, year, numSits, distance);
+    public Kona(String type, int year, int numSits, int distance, String transmission) {
+        super(type, year, numSits, distance);
         this.transmission = transmission;
-        mark = Mark.Ford;
+        mark = Mark.Hyundai;
     }
 
     @Override
@@ -34,14 +33,14 @@ public class Explorer extends Ford implements Use_In_Taxi {
 
     @Override
     public void serve_auto(String command) {
-        System.out.println("Use in Taxi:" +command);
+        System.out.println("Use in Taxi:" + command);
     }
+
     @Override
     public void last_serve(String command) {
         Use_In_Taxi.super.last_serve(command);
     }
 
-
-}
+    }
 
 
