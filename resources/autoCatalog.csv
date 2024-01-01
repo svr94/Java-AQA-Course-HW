@@ -1,71 +1,102 @@
 ﻿mark;model;countryBrand;type;year;numSits;distance;color;fuel;transmission;numDoors
-Kia;Rio;South Korea;Sedan;2020;5;40000;White;Diesel;Manual;4
-Ford;Focus;USA;Hatchback;2020;5;25000;Red;Diesel;Manual;5
-Hyundai;Santa Fe;South Korea;SUV;2017;5;60000;Blue;Petrol;Automatic;5
-BMW;X3;Germany;SUV;2018;5;45000;White;Petrol;Automatic;4
-BMW;X5;Germany;SUV;2018;5;45000;White;Petrol;Automatic;4
-Lexus;GS;Japan;Sedan;2019;5;30000;Blue;Petrol;Automatic;4
-Lexus;LS;Japan;Sedan;2019;5;30000;Blue;Petrol;Automatic;4
+Ford;Focus;USA;Sedan;2020;5;15000;Blue;Petrol;Automatic;4
+Ford;Focus;USA;Hatchback;2019;5;18000;Red;Diesel;Manual;5
+Ford;Focus;USA;Wagon;2021;5;12000;Black;Petrol;Automatic;5
+Ford;Focus;USA;Sedan;2022;5;8000;White;Petrol;Automatic;4
+Ford;Focus;USA;Hatchback;2020;5;20000;Gray;Diesel;Manual;5
+Ford;Focus;USA;Wagon;2019;5;25000;Green;Petrol;Automatic;5
+Ford;Focus;USA;Sedan;2018;5;30000;Black;Petrol;Manual;4
+Ford;Focus;USA;Hatchback;2022;5;10000;Red;Diesel;Automatic;5
+Ford;Focus;USA;Wagon;2020;5;22000;Blue;Petrol;Manual;5
+Ford;Focus;USA;Hatchback;2021;5;20000;Green;Petrol;Automatic;5
+Ford;Explorer;USA;SUV;2020;7;20000;Silver;Petrol;Automatic;4
+Ford;Explorer;USA;SUV;2019;7;25000;Black;Diesel;Automatic;5
+Ford;Explorer;USA;SUV;2021;7;18000;White;Petrol;Automatic;5
+Ford;Explorer;USA;SUV;2022;7;12000;Blue;Petrol;Automatic;4
+Ford;Explorer;USA;SUV;2020;7;28000;Gray;Diesel;Automatic;5
+Ford;Explorer;USA;SUV;2019;7;32000;Red;Petrol;Automatic;5
+Ford;Explorer;USA;SUV;2018;7;35000;Black;Petrol;Automatic;4
+Ford;Explorer;USA;SUV;2022;7;15000;Green;Diesel;Automatic;5
+Ford;Explorer;USA;SUV;2020;7;30000;Brown;Petrol;Automatic;5
+Ford;Explorer;USA;SUV;2019;7;26000;White;Diesel;Automatic;4
+Kia;Rio;South Korea;Sedan;2020;5;18000;Silver;Petrol;Automatic;4
+Kia;Rio;South Korea;Hatchback;2019;5;22000;Blue;Diesel;Manual;5
+Kia;Rio;South Korea;Sedan;2021;5;15000;White;Petrol;Automatic;4
+Kia;Rio;South Korea;Hatchback;2022;5;10000;Black;Petrol;Automatic;5
+Kia;Rio;South Korea;Sedan;2020;5;25000;Red;Diesel;Manual;4
+Kia;Rio;South Korea;Hatchback;2019;5;28000;Gray;Petrol;Automatic;5
+Kia;Rio;South Korea;Sedan;2018;5;32000;Black;Petrol;Manual;4
+Kia;Rio;South Korea;Hatchback;2022;5;12000;White;Diesel;Automatic;5
+Kia;Rio;South Korea;Sedan;2020;5;20000;Blue;Petrol;Manual;4
+Kia;Rio;South Korea;Hatchback;2019;5;18000;Red;Diesel;Automatic;5
+Kia;Cerato;South Korea;Sedan;2020;5;18000;Silver;Petrol;Automatic;4
+Kia;Cerato;South Korea;Hatchback;2019;5;22000;Blue;Diesel;Manual;5
 Kia;Cerato;South Korea;Sedan;2021;5;15000;White;Petrol;Automatic;4
-Ford;Explorer;USA;SUV;2020;7;25000;Gray;Petrol;Automatic;5
-Hyundai;Kona;South Korea;SUV;2017;5;60000;Blue;Petrol;Automatic;5
-Kia;Rio;South Korea;Sedan;2020;5;40000;White;Diesel;Manual;4
-Ford;Focus;USA;Hatchback;2020;5;25000;Red;Diesel;Manual;5
-Hyundai;Santa Fe;South Korea;SUV;2017;5;60000;Blue;Petrol;Automatic;5
-BMW;X3;Germany;SUV;2018;5;45000;White;Petrol;Automatic;4
-BMW;X5;Germany;SUV;2018;5;45000;White;Petrol;Automatic;4
-Lexus;GS;Japan;Sedan;2019;5;30000;Blue;Petrol;Automatic;4
-Lexus;LS;Japan;Sedan;2019;5;30000;Blue;Petrol;Automatic;4
-Kia;Cerato;South Korea;Sedan;2021;5;15000;White;Petrol;Automatic;4
-Ford;Explorer;USA;SUV;2020;7;25000;Gray;Petrol;Automatic;5
-Hyundai;Kona;South Korea;SUV;2017;5;60000;Blue;Petrol;Automatic;5
-Kia;Rio;South Korea;Sedan;2020;5;40000;White;Diesel;Manual;4
-Ford;Focus;USA;Hatchback;2020;5;25000;Red;Diesel;Manual;5
-Hyundai;Santa Fe;South Korea;SUV;2017;5;60000;Blue;Petrol;Automatic;5
-BMW;X3;Germany;SUV;2018;5;45000;White;Petrol;Automatic;4
-BMW;X5;Germany;SUV;2018;5;45000;White;Petrol;Automatic;4
-Lexus;GS;Japan;Sedan;2019;5;30000;Blue;Petrol;Automatic;4
-Lexus;LS;Japan;Sedan;2019;5;30000;Blue;Petrol;Automatic;4
-Kia;Cerato;South Korea;Sedan;2021;5;15000;White;Petrol;Automatic;4
-Ford;Explorer;USA;SUV;2020;7;25000;Gray;Petrol;Automatic;5
-Hyundai;Kona;South Korea;SUV;2017;5;60000;Blue;Petrol;Automatic;5
-Kia;Rio;South Korea;Sedan;2020;5;40000;White;Diesel;Manual;4
-Ford;Focus;USA;Hatchback;2020;5;25000;Red;Diesel;Manual;5
-Hyundai;Santa Fe;South Korea;SUV;2017;5;60000;Blue;Petrol;Automatic;5
-BMW;X3;Germany;SUV;2018;5;45000;White;Petrol;Automatic;4
-BMW;X5;Germany;SUV;2018;5;45000;White;Petrol;Automatic;4
-Lexus;GS;Japan;Sedan;2019;5;30000;Blue;Petrol;Automatic;4
-Lexus;LS;Japan;Sedan;2019;5;30000;Blue;Petrol;Automatic;4
-Kia;Cerato;South Korea;Sedan;2021;5;15000;White;Petrol;Automatic;4
-Ford;Explorer;USA;SUV;2020;7;25000;Gray;Petrol;Automatic;5
-Hyundai;Kona;South Korea;SUV;2017;5;60000;Blue;Petrol;Automatic;5
-Kia;Rio;South Korea;Sedan;2020;5;40000;White;Diesel;Manual;4
-Ford;Focus;USA;Hatchback;2020;5;25000;Red;Diesel;Manual;5
-Hyundai;Santa Fe;South Korea;SUV;2017;5;60000;Blue;Petrol;Automatic;5
-BMW;X3;Germany;SUV;2018;5;45000;White;Petrol;Automatic;4
-BMW;X5;Germany;SUV;2018;5;45000;White;Petrol;Automatic;4
-Lexus;GS;Japan;Sedan;2019;5;30000;Blue;Petrol;Automatic;4
-Lexus;LS;Japan;Sedan;2019;5;30000;Blue;Petrol;Automatic;4
-Kia;Cerato;South Korea;Sedan;2021;5;15000;White;Petrol;Automatic;4
-Ford;Explorer;USA;SUV;2020;7;25000;Gray;Petrol;Automatic;5
-Hyundai;Kona;South Korea;SUV;2017;5;60000;Blue;Petrol;Automatic;5
-Kia;Rio;South Korea;Sedan;2020;5;40000;White;Diesel;Manual;4
-Ford;Focus;USA;Hatchback;2020;5;25000;Red;Diesel;Manual;5
-Hyundai;Santa Fe;South Korea;SUV;2017;5;60000;Blue;Petrol;Automatic;5
-BMW;X3;Germany;SUV;2018;5;45000;White;Petrol;Automatic;4
-BMW;X5;Germany;SUV;2018;5;45000;White;Petrol;Automatic;4
-Lexus;GS;Japan;Sedan;2019;5;30000;Blue;Petrol;Automatic;4
-Lexus;LS;Japan;Sedan;2019;5;30000;Blue;Petrol;Automatic;4
-Kia;Cerato;South Korea;Sedan;2021;5;15000;White;Petrol;Automatic;4
-Ford;Explorer;USA;SUV;2020;7;25000;Gray;Petrol;Automatic;5
-Hyundai;Kona;South Korea;SUV;2017;5;60000;Blue;Petrol;Automatic;5
-Kia;Rio;South Korea;Sedan;2020;5;40000;White;Diesel;Manual;4
-Ford;Focus;USA;Hatchback;2020;5;25000;Red;Diesel;Manual;5
-Hyundai;Santa Fe;South Korea;SUV;2017;5;60000;Blue;Petrol;Automatic;5
-BMW;X3;Germany;SUV;2018;5;45000;White;Petrol;Automatic;4
-BMW;X5;Germany;SUV;2018;5;45000;White;Petrol;Automatic;4
-Lexus;GS;Japan;Sedan;2019;5;30000;Blue;Petrol;Automatic;4
-Lexus;LS;Japan;Sedan;2019;5;30000;Blue;Petrol;Automatic;4
-Kia;Cerato;South Korea;Sedan;2021;5;15000;White;Petrol;Automatic;4
-Ford;Explorer;USA;SUV;2020;7;25000;Gray;Petrol;Automatic;5
-Hyundai;Kona;South Korea;SUV;2017;5;60000;Blue;Petrol;Automatic;5
+Kia;Cerato;South Korea;Hatchback;2022;5;10000;Black;Petrol;Automatic;5
+Kia;Cerato;South Korea;Sedan;2020;5;25000;Red;Diesel;Manual;4
+Kia;Cerato;South Korea;Hatchback;2019;5;28000;Gray;Petrol;Automatic;5
+Kia;Cerato;South Korea;Sedan;2018;5;32000;Black;Petrol;Manual;4
+Kia;Cerato;South Korea;Hatchback;2022;5;12000;White;Diesel;Automatic;5
+Kia;Cerato;South Korea;Sedan;2020;5;20000;Blue;Petrol;Manual;4
+Kia;Cerato;South Korea;Hatchback;2019;5;18000;Red;Diesel;Automatic;5
+Hyundai;Santa Fe;South Korea;SUV;2020;7;20000;Silver;Petrol;Automatic;4
+Hyundai;Santa Fe;South Korea;SUV;2019;7;25000;Black;Diesel;Automatic;5
+Hyundai;Santa Fe;South Korea;SUV;2021;7;18000;White;Petrol;Automatic;5
+Hyundai;Santa Fe;South Korea;SUV;2022;7;12000;Blue;Petrol;Automatic;4
+Hyundai;Santa Fe;South Korea;SUV;2020;7;28000;Gray;Diesel;Automatic;5
+Hyundai;Santa Fe;South Korea;SUV;2019;7;32000;Red;Petrol;Automatic;5
+Hyundai;Santa Fe;South Korea;SUV;2018;7;35000;Black;Petrol;Automatic;4
+Hyundai;Santa Fe;South Korea;SUV;2022;7;15000;Green;Diesel;Automatic;5
+Hyundai;Santa Fe;South Korea;SUV;2020;7;30000;Brown;Petrol;Automatic;5
+Hyundai;Santa Fe;South Korea;SUV;2019;7;26000;White;Diesel;Automatic;4
+Hyundai;Kona;South Korea;SUV;2020;5;18000;Silver;Petrol;Automatic;4
+Hyundai;Kona;South Korea;SUV;2019;5;22000;Blue;Diesel;Manual;5
+Hyundai;Kona;South Korea;SUV;2021;5;15000;White;Petrol;Automatic;4
+Hyundai;Kona;South Korea;SUV;2022;5;10000;Black;Petrol;Automatic;5
+Hyundai;Kona;South Korea;SUV;2020;5;25000;Red;Diesel;Manual;4
+Hyundai;Kona;South Korea;SUV;2019;5;28000;Gray;Petrol;Automatic;5
+Hyundai;Kona;South Korea;SUV;2018;5;32000;Black;Petrol;Manual;4
+Hyundai;Kona;South Korea;SUV;2022;5;12000;White;Diesel;Automatic;5
+Hyundai;Kona;South Korea;SUV;2020;5;20000;Blue;Petrol;Manual;4
+Hyundai;Kona;South Korea;SUV;2019;5;18000;Red;Diesel;Automatic;5
+BMW;X3;Germany;SUV;2020;5;18000;Silver;Petrol;Automatic;4
+BMW;X3;Germany;SUV;2019;5;22000;Blue;Diesel;Manual;5
+BMW;X3;Germany;SUV;2021;5;15000;White;Petrol;Automatic;4
+BMW;X3;Germany;SUV;2022;5;10000;Black;Petrol;Automatic;5
+BMW;X3;Germany;SUV;2020;5;25000;Red;Diesel;Manual;4
+BMW;X3;Germany;SUV;2019;5;28000;Gray;Petrol;Automatic;5
+BMW;X3;Germany;SUV;2018;5;32000;Black;Petrol;Manual;4
+BMW;X3;Germany;SUV;2022;5;12000;White;Diesel;Automatic;5
+BMW;X3;Germany;SUV;2020;5;20000;Blue;Petrol;Manual;4
+BMW;X3;Germany;SUV;2019;5;18000;Red;Diesel;Automatic;5
+BMW;X5;Germany;SUV;2020;5;18000;Silver;Petrol;Automatic;4
+BMW;X5;Germany;SUV;2019;5;22000;Blue;Diesel;Manual;5
+BMW;X5;Germany;SUV;2021;5;15000;White;Petrol;Automatic;4
+BMW;X5;Germany;SUV;2022;5;10000;Black;Petrol;Automatic;5
+BMW;X5;Germany;SUV;2020;5;25000;Red;Diesel;Manual;4
+BMW;X5;Germany;SUV;2019;5;28000;Gray;Petrol;Automatic;5
+BMW;X5;Germany;SUV;2018;5;32000;Black;Petrol;Manual;4
+BMW;X5;Germany;SUV;2022;5;12000;White;Diesel;Automatic;5
+BMW;X5;Germany;SUV;2020;5;20000;Blue;Petrol;Manual;4
+BMW;X5;Germany;SUV;2019;5;18000;Red;Diesel;Automatic;5
+Lexus;GS;Japan;Sedan;2020;5;18000;Silver;Petrol;Automatic;4
+Lexus;GS;Japan;Sedan;2019;5;22000;Blue;Hybrid;CVT;4
+Lexus;GS;Japan;Sedan;2021;5;15000;White;Petrol;Automatic;4
+Lexus;GS;Japan;Sedan;2022;5;10000;Black;Petrol;Automatic;4
+Lexus;GS;Japan;Sedan;2020;5;25000;Red;Hybrid;CVT;4
+Lexus;GS;Japan;Sedan;2019;5;28000;Gray;Petrol;Automatic;4
+Lexus;GS;Japan;Sedan;2018;5;32000;Black;Petrol;Automatic;4
+Lexus;GS;Japan;Sedan;2022;5;12000;White;Hybrid;CVT;4
+Lexus;GS;Japan;Sedan;2020;5;20000;Blue;Petrol;Automatic;4
+Lexus;GS;Japan;Sedan;2019;5;18000;Red;Hybrid;CVT;4
+Lexus;LS;Japan;Sedan;2020;5;18000;Silver;Petrol;Automatic;4
+Lexus;LS;Japan;Sedan;2019;5;22000;Blue;Hybrid;CVT;4
+Lexus;LS;Japan;Sedan;2021;5;15000;White;Petrol;Automatic;4
+Lexus;LS;Japan;Sedan;2022;5;10000;Black;Petrol;Automatic;4
+Lexus;LS;Japan;Sedan;2020;5;25000;Red;Hybrid;CVT;4
+Lexus;LS;Japan;Sedan;2019;5;28000;Gray;Petrol;Automatic;4
+Lexus;LS;Japan;Sedan;2018;5;32000;Black;Petrol;Automatic;4
+Lexus;LS;Japan;Sedan;2022;5;12000;White;Hybrid;CVT;4
+Lexus;LS;Japan;Sedan;2020;5;20000;Blue;Petrol;Automatic;4
+Lexus;LS;Japan;Sedan;2019;5;18000;Red;Hybrid;CVT;4
+
