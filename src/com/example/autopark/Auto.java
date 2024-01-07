@@ -3,10 +3,19 @@ package com.example.autopark;
 import java.util.StringJoiner;
 
 public abstract class Auto {
+    protected int id;
     protected String type;
     protected int year;
     protected int numSits;
     protected int distance;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getType() {
         return type;
@@ -40,7 +49,8 @@ public abstract class Auto {
         this.distance = distance;
     }
 
-    public Auto(String type, int year, int numSits, int distance) {
+    public Auto(int id, String type, int year, int numSits, int distance) {
+        this.id = id;
         this.type = type;
         this.year = year;
         this.numSits = numSits;
@@ -50,7 +60,8 @@ public abstract class Auto {
     @Override
     public String toString() {
         return "Auto{" +
-                "type='" + type + '\'' +
+                "id=" + id +
+                ", type='" + type + '\'' +
                 ", year=" + year +
                 ", numSits=" + numSits +
                 ", distance=" + distance +

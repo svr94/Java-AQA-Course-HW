@@ -1,12 +1,13 @@
 package com.example.autopark.mark.kia.model;
+
+import com.example.autopark.Use_In_Taxi;
 import com.example.autopark.mark.Mark;
 import com.example.autopark.mark.kia.Kia;
-import com.example.autopark.Use_In_Taxi;
 
 
-public class Cerato extends Kia implements Use_In_Taxi {
+public class Rio extends Kia implements Use_In_Taxi {
 
-    protected String model = "Cerato";
+    protected String model = "Rio";
 
     protected String transmission;
 
@@ -18,7 +19,7 @@ public class Cerato extends Kia implements Use_In_Taxi {
         this.transmission = transmission;
     }
 
-    public Cerato(int id, String type, int year, int numSits, int distance, String transmission) {
+    public Rio(int id, String type, int year, int numSits, int distance, String transmission) {
         super(id, type, year, numSits, distance);
         this.transmission = transmission;
         mark = Mark.Kia;

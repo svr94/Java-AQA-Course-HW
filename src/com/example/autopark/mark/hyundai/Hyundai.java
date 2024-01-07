@@ -7,8 +7,8 @@ public class Hyundai extends Auto {
 
     protected static Mark mark = null;
 
-    public Hyundai(String type, int year, int numSits, int distance) {
-        super(type, year, numSits, distance);
+    public Hyundai(int id, String type, int year, int numSits, int distance) {
+        super(id, type, year, numSits, distance);
     }
 
     @Override

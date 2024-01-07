@@ -8,11 +8,12 @@ public class Focus extends Ford implements Use_In_Taxi {
     protected String model = "Focus";
     public String transmission;
 
-    public Focus(String type, int year, int numSits, int distance, String transmission)
-    {super(type, year, numSits, distance);
+    public Focus(int id, String type, int year, int numSits, int distance, String transmission)
+    {super(id, type, year, numSits, distance);
         this.transmission = transmission;
         mark = Mark.Ford;
     }
+
 
     public String getTransmission() {
         return transmission;
@@ -24,7 +25,7 @@ public class Focus extends Ford implements Use_In_Taxi {
 
     @Override
     public String toString() {
-        return "Focus{" +
+        return "{" +
                 "mark=" + mark +
                 ", model=" + model
                 +", transmission=" + transmission

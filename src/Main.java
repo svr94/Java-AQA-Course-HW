@@ -1,23 +1,28 @@
+import com.example.autopark.mark.bmw.model.X3;
+import com.example.autopark.mark.bmw.model.X5;
+import com.example.autopark.mark.hyundai.model.Santa_Fe;
 import com.example.autopark.mark.kia.model.Cerato;
 import com.example.autopark.mark.ford.model.Focus;
-import com.example.autopark.mark.hyundai.model.Sonata;
+import com.example.autopark.mark.hyundai.model.Kona;
 import com.example.autopark.mark.ford.model.Explorer;
 import com.example.autopark.Auto;
+import com.example.autopark.mark.kia.model.Rio;
+import com.example.autopark.mark.lexus.model.GS;
+import com.example.autopark.mark.lexus.model.LS;
 
-import java.io.File;
+import java.util.*;
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.NoSuchElementException;
-import java.util.Scanner;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 
 public class Main {
 
     private static final String FILE_NAME = "resources/autoCatalog.csv";
     private static String[] pieces;
-
 
 
 //  SCANNER
@@ -45,8 +50,6 @@ public class Main {
 //    }
 
 
-
-
     // FILEREADER
     static String[] readFileUsingFileReader(String fileName) {
         var newLine = System.lineSeparator();
@@ -58,44 +61,108 @@ public class Main {
             throw new RuntimeException(e);
         }
         int c;
-            try {
-                while ((c = reader.read()) != -1){
-                    sb.append((char) c);
+        try {
+            while ((c = reader.read()) != -1) {
+                sb.append((char) c);
             }
-                reader.close();
-            } catch (IOException e){
-                throw new RuntimeException(e);
-            }
-            return sb.toString().split(newLine);
+            reader.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
+        return sb.toString().split(newLine);
+    }
 
-        public static void main (String[]args){
+    public static void main(String[] args) {
 //  SCANNER
 //        String[] data = readFileUsingScanner(FILE_NAME);
-            String[] data = readFileUsingFileReader(FILE_NAME);
-            for (int i = 1; i < data.length; i++) {
-                var pieces = data[i].split(";");
-                Auto auto = null;
-                switch (pieces[1]) {
-                    case "Cerato":
-                        auto = new Cerato(pieces[3], Integer.parseInt(pieces[4]), Integer.parseInt(pieces[5]),
-                                Integer.parseInt(pieces[6]), pieces[9]);
-                        break;
-                    case "Focus":
-                        auto = new Focus(pieces[3], Integer.parseInt(pieces[4]), Integer.parseInt(pieces[5]),
-                                Integer.parseInt(pieces[6]), pieces[9]);
-                        break;
-                    case "Sonata":
-                        auto = new Sonata(pieces[3], Integer.parseInt(pieces[4]), Integer.parseInt(pieces[5]),
-                                Integer.parseInt(pieces[6]), pieces[9]);
-                        break;
-                    case "Explorer":
-                        auto = new Explorer(pieces[3], Integer.parseInt(pieces[4]), Integer.parseInt(pieces[5]),
-                                Integer.parseInt(pieces[6]), pieces[9]);
-                        break;
-                }
-                System.out.println("Сar available: " + auto);
+        String[] data = readFileUsingFileReader(FILE_NAME);
+        autoObjects(data);
+    }
+
+    private static void autoObjects(String[] data) {
+        HashSet<Auto> autoList = new HashSet<>();
+        for (int i = 1; i < data.length; i++) {
+            var pieces = data[i].split(";");
+            Auto auto = null;
+            switch (pieces[2]) {
+                case "Cerato":
+                    auto = new Cerato(Integer.parseInt(pieces[0]), pieces[4], Integer.parseInt(pieces[5]), Integer.parseInt(pieces[6]),
+                            Integer.parseInt(pieces[7]), pieces[10]);
+                    break;
+                case "Rio":
+                    auto = new Rio(Integer.parseInt(pieces[0]), pieces[4], Integer.parseInt(pieces[5]), Integer.parseInt(pieces[6]),
+                            Integer.parseInt(pieces[7]), pieces[10]);
+                    break;
+                case "Kona":
+                    auto = new Kona(Integer.parseInt(pieces[0]), pieces[4], Integer.parseInt(pieces[5]), Integer.parseInt(pieces[6]),
+                            Integer.parseInt(pieces[7]), pieces[10]);
+                    break;
+                case "Santa Fe":
+                    auto = new Santa_Fe(Integer.parseInt(pieces[0]), pieces[4], Integer.parseInt(pieces[5]), Integer.parseInt(pieces[6]),
+                            Integer.parseInt(pieces[7]), pieces[10]);
+                    break;
+                case "Focus":
+                    auto = new Focus(Integer.parseInt(pieces[0]), pieces[4], Integer.parseInt(pieces[5]), Integer.parseInt(pieces[6]),
+                            Integer.parseInt(pieces[7]), pieces[10]);
+                    break;
+                case "Explorer":
+                    auto = new Explorer(Integer.parseInt(pieces[0]), pieces[4], Integer.parseInt(pieces[5]), Integer.parseInt(pieces[6]),
+                            Integer.parseInt(pieces[7]), pieces[10]);
+                    break;
+                case "X3":
+                    auto = new X3(Integer.parseInt(pieces[0]), pieces[4], Integer.parseInt(pieces[5]), Integer.parseInt(pieces[6]),
+                            Integer.parseInt(pieces[7]), pieces[10]);
+                    break;
+                case "X5":
+                    auto = new X5(Integer.parseInt(pieces[0]), pieces[4], Integer.parseInt(pieces[5]), Integer.parseInt(pieces[6]),
+                            Integer.parseInt(pieces[7]), pieces[10]);
+                    break;
+                case "GS":
+                    auto = new GS(Integer.parseInt(pieces[0]), pieces[4], Integer.parseInt(pieces[5]), Integer.parseInt(pieces[6]),
+                            Integer.parseInt(pieces[7]), pieces[10]);
+                    break;
+                case "LS":
+                    auto = new LS(Integer.parseInt(pieces[0]), pieces[4], Integer.parseInt(pieces[5]), Integer.parseInt(pieces[6]),
+                            Integer.parseInt(pieces[7]), pieces[10]);
+                    break;
             }
+            autoList.add(auto);
+//            System.out.println("Сar available: " + auto);
         }
 
+        System.out.println("--------------------");
+        Stream<Auto> autoSortStream = autoList.stream();
+        autoSortStream
+                .sorted((a, b) -> a.getId() - b.getId())
+                .skip(12)
+                .limit(12)
+                .forEach(System.out::println);
+
+        System.out.println("--------------------");
+        Stream<Auto> autoDistance = autoList.stream();
+        autoDistance
+                .filter(auto -> auto.getDistance()<20000)
+                .limit(25)
+                .forEach(System.out::println);
+
+        System.out.println("--------------------");
+
+        Stream<Auto> autoMap = autoList.stream();
+
+        Map<Integer, String> stringAutoMap = autoMap.collect(Collectors.toMap(Auto::getId, Auto::getType));
+        System.out.println(stringAutoMap);
+
     }
+
+//        System.out.println(autoList);
+}
+
+//        interface MyFunctionalInterface {
+//            void doSomething();
+//        }
+//        MyFunctionalInterface myFunctionalInterface = () -> {
+//            System.out.println("Hello, world!");
+//        };
+//        myFunctionalInterface.doSomething();
+
+

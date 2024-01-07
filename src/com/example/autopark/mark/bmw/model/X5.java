@@ -1,14 +1,17 @@
-package com.example.autopark.mark.kia.model;
-import com.example.autopark.mark.Mark;
-import com.example.autopark.mark.kia.Kia;
+package com.example.autopark.mark.bmw.model;
 import com.example.autopark.Use_In_Taxi;
+import com.example.autopark.mark.Mark;
+import com.example.autopark.mark.bmw.BMW;
 
+public class X5 extends BMW implements Use_In_Taxi {
+    protected String model = "X5";
+    public String transmission;
 
-public class Cerato extends Kia implements Use_In_Taxi {
-
-    protected String model = "Cerato";
-
-    protected String transmission;
+    public X5(int id, String type, int year, int numSits, int distance, String transmission)
+    {super(id, type, year, numSits, distance);
+        this.transmission = transmission;
+        mark = Mark.BMW;
+    }
 
     public String getTransmission() {
         return transmission;
@@ -16,12 +19,6 @@ public class Cerato extends Kia implements Use_In_Taxi {
 
     public void setTransmission(String transmission) {
         this.transmission = transmission;
-    }
-
-    public Cerato(int id, String type, int year, int numSits, int distance, String transmission) {
-        super(id, type, year, numSits, distance);
-        this.transmission = transmission;
-        mark = Mark.Kia;
     }
 
     @Override
@@ -34,18 +31,14 @@ public class Cerato extends Kia implements Use_In_Taxi {
     }
 
     @Override
-    public void trafficAccidents() {
-
-    }
-
-    @Override
     public void serve_auto(String command) {
-
+        System.out.println("Use in Taxi:" +command);
     }
-
     @Override
     public void last_serve(String command) {
         Use_In_Taxi.super.last_serve(command);
     }
-}
 
+
+
+}

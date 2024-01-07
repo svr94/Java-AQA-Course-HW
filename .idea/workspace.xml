@@ -4,17 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1be03c44-bf98-4a8e-b145-9c7bff4195bb" name="Changes" comment="hw5 v3">
-      <change afterPath="$PROJECT_DIR$/src/com/example/autopark/mark/Mark.java" afterDir="false" />
+    <list default="true" id="1be03c44-bf98-4a8e-b145-9c7bff4195bb" name="Changes" comment="hw7 v1">
+      <change afterPath="$PROJECT_DIR$/src/com/example/autopark/mark/bmw/BMW.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/example/autopark/mark/bmw/model/X3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/example/autopark/mark/bmw/model/X5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/example/autopark/mark/hyundai/model/Santa_Fe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/example/autopark/mark/kia/model/Rio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/example/autopark/mark/lexus/Lexus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/example/autopark/mark/lexus/model/GS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/example/autopark/mark/lexus/model/LS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/autoCatalog.csv" beforeDir="false" afterPath="$PROJECT_DIR$/resources/autoCatalog.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/autopark/Auto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/autopark/Auto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/autopark/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/autopark/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/autopark/mark/Mark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/autopark/mark/Mark.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/autopark/mark/ford/Ford.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/autopark/mark/ford/Ford.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/autopark/mark/ford/model/Explorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/autopark/mark/ford/model/Explorer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/autopark/mark/ford/model/Focus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/autopark/mark/ford/model/Focus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/autopark/mark/hyundai/Hyundai.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/autopark/mark/hyundai/Hyundai.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/example/autopark/mark/hyundai/model/Sonata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/autopark/mark/hyundai/model/Sonata.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/example/autopark/mark/hyundai/model/Sonata.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/autopark/mark/hyundai/model/Kona.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/autopark/mark/kia/Kia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/autopark/mark/kia/Kia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/example/autopark/mark/kia/model/Cerato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/example/autopark/mark/kia/model/Cerato.java" afterDir="false" />
     </list>
@@ -33,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="hw6_Packages.ToString()_" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,16 +55,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/user_1/Desktop/Java AQA Hillel/Home-work/HW7&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/user_1/Desktop/Java AQA Hillel/Home-work/HW9"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.autopark.mark.lexus.model" />
+      <recent name="com.example.autopark.mark.kia.model" />
+      <recent name="com.example.autopark.mark.hyundai.model" />
+      <recent name="com.example.autopark.mark.bmw.model" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -103,7 +117,21 @@
       <option name="project" value="LOCAL" />
       <updated>1702841305528</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="hw7 v1">
+      <created>1703450386703</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703450386703</updated>
+    </task>
+    <task id="LOCAL-00007" summary="hw7 v1">
+      <created>1703450402184</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703450402184</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,6 +150,7 @@
     <MESSAGE value="hw4 v2" />
     <MESSAGE value="hw5 v2" />
     <MESSAGE value="hw5 v3" />
-    <option name="LAST_COMMIT_MESSAGE" value="hw5 v3" />
+    <MESSAGE value="hw7 v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="hw7 v1" />
   </component>
 </project>

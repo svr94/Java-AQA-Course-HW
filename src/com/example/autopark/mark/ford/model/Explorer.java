@@ -17,15 +17,15 @@ public class Explorer extends Ford implements Use_In_Taxi {
         this.transmission = transmission;
     }
 
-    public Explorer(String type, int year, int numSits, int distance, String transmission)
-    {super(type, year, numSits, distance);
+    public Explorer(int id, String type, int year, int numSits, int distance, String transmission)
+    {super(id, type, year, numSits, distance);
         this.transmission = transmission;
         mark = Mark.Ford;
     }
 
     @Override
     public String toString() {
-        return "Explorer{" +
+        return "{" +
                 "mark=" + mark +
                 ", model=" + model
                 +", transmission=" + transmission
