@@ -89,7 +89,7 @@ public class Main {
         LocalDateTime date1= LocalDateTime.of(2022, 1, 17, 12, 55, 44);
         LocalDateTime date2= LocalDateTime.of(2024, 5, 12, 7, 33, 55);
         long daysBetween = ChronoUnit.DAYS.between(date1, date2);
-        System.out.println("Days between first and second date:" + daysBetween);
+        System.out.println("Days between first and second date: " + daysBetween + " days");
 
     }
 
