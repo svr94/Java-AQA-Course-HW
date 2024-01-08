@@ -10,6 +10,7 @@ import com.example.autopark.mark.kia.model.Rio;
 import com.example.autopark.mark.lexus.model.GS;
 import com.example.autopark.mark.lexus.model.LS;
 
+import java.time.chrono.ChronoPeriod;
 import java.util.*;
 
 import java.io.FileNotFoundException;
@@ -17,6 +18,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 
 
 public class Main {
@@ -73,13 +76,25 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        var start = System.currentTimeMillis();
 //  SCANNER
 //        String[] data = readFileUsingScanner(FILE_NAME);
         String[] data = readFileUsingFileReader(FILE_NAME);
+        var importLengthTime = System.currentTimeMillis() - start;
+        System.out.println("Import data time:" + importLengthTime);
         autoObjects(data);
+//        var createObjectTime = System.currentTimeMillis() - start;
+//        System.out.println("Create object time:" + createObjectTime);
+
+        LocalDateTime date1= LocalDateTime.of(2022, 1, 17, 12, 55, 44);
+        LocalDateTime date2= LocalDateTime.of(2024, 5, 12, 7, 33, 55);
+        long daysBetween = ChronoUnit.DAYS.between(date1, date2);
+        System.out.println("Days between first and second date:" + daysBetween);
+
     }
 
     private static void autoObjects(String[] data) {
+        var createObjectStart = System.currentTimeMillis();
         HashSet<Auto> autoList = new HashSet<>();
         for (int i = 1; i < data.length; i++) {
             var pieces = data[i].split(";");
@@ -129,7 +144,10 @@ public class Main {
             autoList.add(auto);
 //            System.out.println("Сar available: " + auto);
         }
+        var createObjectTime = System.currentTimeMillis() - createObjectStart;
+        System.out.println("Create object time:" + createObjectTime);
 
+        var streamsStart = System.currentTimeMillis();
         System.out.println("--------------------");
         Stream<Auto> autoSortStream = autoList.stream();
         autoSortStream
@@ -151,8 +169,10 @@ public class Main {
 
         Map<Integer, String> stringAutoMap = autoMap.collect(Collectors.toMap(Auto::getId, Auto::getType));
         System.out.println(stringAutoMap);
-
+        var streamsTime = System.currentTimeMillis() - streamsStart;
+        System.out.println("Streams time:" + streamsTime);
     }
+
 
 //        System.out.println(autoList);
 }
